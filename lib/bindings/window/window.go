@@ -7,13 +7,13 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/miketheprogrammer/go-thrust/lib/bindings/session"
-	. "github.com/miketheprogrammer/go-thrust/lib/commands"
-	. "github.com/miketheprogrammer/go-thrust/lib/common"
-	"github.com/miketheprogrammer/go-thrust/lib/connection"
-	"github.com/miketheprogrammer/go-thrust/lib/dispatcher"
-	"github.com/miketheprogrammer/go-thrust/lib/events"
-	"github.com/miketheprogrammer/go-thrust/lib/spawn"
+	"github.com/c-darwin/go-thrust/lib/bindings/session"
+	. "github.com/c-darwin/go-thrust/lib/commands"
+	. "github.com/c-darwin/go-thrust/lib/common"
+	"github.com/c-darwin/go-thrust/lib/connection"
+	"github.com/c-darwin/go-thrust/lib/dispatcher"
+	"github.com/c-darwin/go-thrust/lib/events"
+	"github.com/c-darwin/go-thrust/lib/spawn"
 )
 
 type Window struct {

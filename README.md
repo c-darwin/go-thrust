@@ -13,7 +13,7 @@ Current Thrust Version 0.7.5
 
 ```bash
 # Fetch go-thrust (lib and command)
-go get -v github.com/miketheprogrammer/go-thrust
+go get -v github.com/c-darwin/go-thrust
 
 # Install Thrust
 go-thrust install
@@ -25,8 +25,8 @@ Official GoLang Thrust Client for Thrust (https://github.com/breach/thrust)
 Chat with us
 ==================
 irc: #breach on freenode - this is the entire breach/thrust community
-gitter.im : https://gitter.im/miketheprogrammer/go-thrust - focused on go-thrust.
-[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/miketheprogrammer/go-thrust?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+gitter.im : https://gitter.im/c-darwin/go-thrust - focused on go-thrust.
+[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/c-darwin/go-thrust?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Contributors
 ===================
@@ -64,9 +64,9 @@ Thrust exposes all of this beautifully over an Stdin/Stdout pipe speaking a JSON
 
 DOCUMENTATION (Docs and Tutorials)
 ================
-* [Tutorials](https://github.com/miketheprogrammer/go-thrust/tree/master/tutorials)
-* [Examples](https://github.com/miketheprogrammer/go-thrust/tree/master/examples)
-* [GoDoc](http://godoc.org/github.com/miketheprogrammer/go-thrust)
+* [Tutorials](https://github.com/c-darwin/go-thrust/tree/master/tutorials)
+* [Examples](https://github.com/c-darwin/go-thrust/tree/master/examples)
+* [GoDoc](http://godoc.org/github.com/c-darwin/go-thrust)
 
 
 Current Platform Specific Cases:

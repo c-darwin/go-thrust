@@ -10,11 +10,11 @@ The reason this is unfortunate is that as library writers it is best to leave Go
 import (
 	"time"
 
-	"github.com/miketheprogrammer/go-thrust/lib/bindings/window"
-	. "github.com/miketheprogrammer/go-thrust/lib/commands"
-	. "github.com/miketheprogrammer/go-thrust/lib/common"
-	"github.com/miketheprogrammer/go-thrust/lib/connection"
-	"github.com/miketheprogrammer/go-thrust/lib/dispatcher"
+	"github.com/c-darwin/go-thrust/lib/bindings/window"
+	. "github.com/c-darwin/go-thrust/lib/commands"
+	. "github.com/c-darwin/go-thrust/lib/common"
+	"github.com/c-darwin/go-thrust/lib/connection"
+	"github.com/c-darwin/go-thrust/lib/dispatcher"
 )
 
 /*

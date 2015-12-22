@@ -3,14 +3,14 @@ package thrust
 import (
 	"runtime"
 
-	"github.com/miketheprogrammer/go-thrust/lib/bindings/menu"
-	"github.com/miketheprogrammer/go-thrust/lib/bindings/session"
-	"github.com/miketheprogrammer/go-thrust/lib/bindings/window"
-	"github.com/miketheprogrammer/go-thrust/lib/common"
-	"github.com/miketheprogrammer/go-thrust/lib/connection"
-	"github.com/miketheprogrammer/go-thrust/lib/dispatcher"
-	"github.com/miketheprogrammer/go-thrust/lib/events"
-	"github.com/miketheprogrammer/go-thrust/lib/spawn"
+	"github.com/c-darwin/go-thrust/lib/bindings/menu"
+	"github.com/c-darwin/go-thrust/lib/bindings/session"
+	"github.com/c-darwin/go-thrust/lib/bindings/window"
+	"github.com/c-darwin/go-thrust/lib/common"
+	"github.com/c-darwin/go-thrust/lib/connection"
+	"github.com/c-darwin/go-thrust/lib/dispatcher"
+	"github.com/c-darwin/go-thrust/lib/events"
+	"github.com/c-darwin/go-thrust/lib/spawn"
 )
 
 /*

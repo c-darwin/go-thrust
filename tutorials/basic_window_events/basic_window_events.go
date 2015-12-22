@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/miketheprogrammer/go-thrust/lib/commands"
-	"github.com/miketheprogrammer/go-thrust/lib/connection"
-	"github.com/miketheprogrammer/go-thrust/thrust"
-	"github.com/miketheprogrammer/go-thrust/tutorials/provisioner"
+	"github.com/c-darwin/go-thrust/lib/commands"
+	"github.com/c-darwin/go-thrust/lib/connection"
+	"github.com/c-darwin/go-thrust/thrust"
+	"github.com/c-darwin/go-thrust/tutorials/provisioner"
 )
 
 /*

@@ -10,7 +10,7 @@ import (
 	"strings"
 	"time"
 
-	. "github.com/miketheprogrammer/go-thrust/lib/common"
+	. "github.com/c-darwin/go-thrust/lib/common"
 )
 
 func downloadFromUrl(url, filepath, version string) (fileName string, err error) {
