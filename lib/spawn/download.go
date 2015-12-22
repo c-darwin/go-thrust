@@ -16,7 +16,7 @@ import (
 func downloadFromUrl(url, filepath, version string) (fileName string, err error) {
 	url = strings.Replace(url, "$V", version, 2)
 	fileName = strings.Replace(filepath, "$V", version, 1)
-	fmt.Println("Downloading", url, "to", fileName)
+	fmt.Println("Downloading 0", url, "to", fileName)
 
 	output, err := os.Create(fileName)
 	if err != nil {

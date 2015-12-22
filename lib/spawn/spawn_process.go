@@ -7,12 +7,10 @@ import (
 	"fmt"
 	"os"
 	"os/exec"
-	"os/user"
-	"path/filepath"
 	"runtime"
-
 	. "github.com/c-darwin/go-thrust/lib/common"
 	"github.com/c-darwin/go-thrust/lib/connection"
+	"github.com/c-darwin/dcoin-go/packages/utils"
 )
 
 const (
@@ -30,20 +28,7 @@ var (
 SetBaseDirectory sets the base directory used in the other helper methods
 */
 func SetBaseDirectory(dir string) error {
-	if len(dir) == 0 {
-		usr, err := user.Current()
-		if err != nil {
-			fmt.Println(err)
-		}
-		dir = usr.HomeDir
-	}
-	dir, err := filepath.Abs(dir)
-	if err != nil {
-		fmt.Println("Could not calculate absolute path", err)
-		return err
-	}
-	base = dir
-
+	base = *utils.Dir
 	return nil
 }
 

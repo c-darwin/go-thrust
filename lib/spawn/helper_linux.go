@@ -2,7 +2,6 @@ package spawn
 
 import (
 	"os"
-	"path/filepath"
 	"strings"
 )
 
@@ -11,7 +10,7 @@ GetThrustDirectory returns the Directory where the unzipped thrust contents are.
 Differs between builds based on OS
 */
 func GetThrustDirectory() string {
-	return filepath.Join(base, "vendor", "linux", "x64", thrustVersion)
+	return base
 }
 
 /*
