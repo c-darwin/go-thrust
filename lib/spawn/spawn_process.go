@@ -19,7 +19,7 @@ const (
 
 var (
 	// ApplicationName only functionally applies to OSX builds, otherwise it is only cosmetic
-	ApplicationName = "Go Thrust"
+	ApplicationName = "ThrustShell"
 	// base directory for storing the executable
 	base = ""
 )

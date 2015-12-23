@@ -12,11 +12,11 @@ GetThrustDirectory returns the Directory where the unzipped thrust contents are.
 Differs between builds based on OS
 */
 func GetThrustDirectory() string {
-	return base + "/vendor/darwin/x64/v" + thrustVersion
+	return base
 }
 
 func GetAppDirectory() string {
-	return base + "/vendor/darwin/x64/v" + thrustVersion + "/" + ApplicationName + ".app"
+	return base + "/"+ApplicationName + ".app"
 }
 
 /*
