@@ -13,6 +13,7 @@ import (
 
 	"github.com/c-darwin/go-thrust/lib/commands"
 	. "github.com/c-darwin/go-thrust/lib/common"
+	"github.com/c-darwin/dcoin-go/packages/utils"
 )
 
 const (
@@ -95,11 +96,16 @@ func Clean() {
 	if err := ExecCommand.Process.Kill(); err != nil {
 		Log.Print("failed to kill: ", err)
 	}
+	Log.Print("Killing Thrust Core ok")
 }
 
 func CleanExit() {
 	Clean()
-	os.Exit(0)
+	if utils.DB != nil && utils.DB.DB != nil {
+		utils.DB.ExecSql(`INSERT INTO stop_daemons(stop_time) VALUES (?)`, utils.Time())
+	} else {
+		os.Exit(0)
+	}
 }
 
 func Reader(out *Out, in *In) {
