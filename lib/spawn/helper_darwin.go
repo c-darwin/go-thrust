@@ -24,7 +24,7 @@ GetExecutablePath returns the path to the Thrust Executable
 Differs between builds based on OS
 */
 func GetExecutablePath() string {
-	return GetThrustDirectory() + "/" + ApplicationName + ".app/Contents/MacOS/" + ApplicationName
+	return GetThrustDirectory() + "/" + ApplicationName
 }
 
 /*
