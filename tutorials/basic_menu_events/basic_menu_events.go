@@ -3,10 +3,10 @@ package main
 import (
 	"fmt"
 
-	"github.com/c-darwin/go-thrust/lib/bindings/menu"
-	"github.com/c-darwin/go-thrust/lib/commands"
-	"github.com/c-darwin/go-thrust/thrust"
-	"github.com/c-darwin/go-thrust/tutorials/provisioner"
+	"github.com/c-darwin/dcoin-go/vendor/src/github.com/c-darwin/go-thrust/lib/bindings/menu"
+	"github.com/c-darwin/dcoin-go/vendor/src/github.com/c-darwin/go-thrust/lib/commands"
+	"github.com/c-darwin/dcoin-go/vendor/src/github.com/c-darwin/go-thrust/thrust"
+	"github.com/c-darwin/dcoin-go/vendor/src/github.com/c-darwin/go-thrust/tutorials/provisioner"
 )
 
 func main() {

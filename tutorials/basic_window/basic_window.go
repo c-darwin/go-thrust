@@ -3,8 +3,8 @@ package main
 import (
 	"time"
 
-	"github.com/c-darwin/go-thrust/thrust"
-	"github.com/c-darwin/go-thrust/tutorials/provisioner"
+	"github.com/c-darwin/dcoin-go/vendor/src/github.com/c-darwin/go-thrust/thrust"
+	"github.com/c-darwin/dcoin-go/vendor/src/github.com/c-darwin/go-thrust/tutorials/provisioner"
 )
 
 func main() {
@@ -16,7 +16,7 @@ func main() {
 	thrust.Start()
 
 	thrustWindow := thrust.NewWindow(thrust.WindowOptions{
-		RootUrl: "http://breach.cc/",
+		RootUrl: "http://localhost:8089",
 	})
 	thrustWindow.Show()
 	thrustWindow.Maximize()

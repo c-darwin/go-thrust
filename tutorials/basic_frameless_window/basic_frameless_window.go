@@ -3,8 +3,9 @@ package main
 import (
 	"time"
 
-	"github.com/c-darwin/go-thrust/thrust"
-	"github.com/c-darwin/go-thrust/tutorials/provisioner"
+	"github.com/c-darwin/dcoin-go/vendor/src/github.com/c-darwin/go-thrust/thrust"
+	"github.com/c-darwin/dcoin-go/vendor/src/github.com/c-darwin/go-thrust/tutorials/provisioner"
+	"fmt"
 )
 
 func main() {
@@ -21,6 +22,9 @@ func main() {
 	})
 	thrustWindow.Show()
 	thrustWindow.Focus()
+	thrustWindow.HandleEvent("closed", func(cr commands.EventResult) {
+		fmt.Println("Close Event Occured")
+	})
 
 	// Lets do a window timeout
 	go func() {

@@ -4,13 +4,10 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/c-darwin/go-thrust/thrust"
-	"github.com/c-darwin/go-thrust/tutorials/provisioner"
+	"github.com/c-darwin/dcoin-go/vendor/src/github.com/c-darwin/go-thrust/thrust"
+	"github.com/c-darwin/dcoin-go/vendor/src/github.com/c-darwin/go-thrust/tutorials/provisioner"
 )
 
-func handler(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprint(w, htmlIndex)
-}
 
 func main() {
 	http.HandleFunc("/", handler)
@@ -34,6 +31,9 @@ func main() {
 	http.ListenAndServe(":8080", nil)
 }
 
+func handler(w http.ResponseWriter, r *http.Request) {
+	fmt.Fprint(w, htmlIndex)
+}
 var htmlIndex string = `
 <html>
   <body>

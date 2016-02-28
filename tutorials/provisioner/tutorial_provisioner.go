@@ -1,6 +1,6 @@
 package tutorial
 
-import "github.com/c-darwin/go-thrust/lib/spawn"
+import "github.com/c-darwin/dcoin-go/vendor/src/github.com/c-darwin/go-thrust/lib/spawn"
 
 /*
 Default implementation of Provisioner

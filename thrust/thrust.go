@@ -3,14 +3,14 @@ package thrust
 import (
 	"runtime"
 
-	"github.com/c-darwin/go-thrust/lib/bindings/menu"
-	"github.com/c-darwin/go-thrust/lib/bindings/session"
-	"github.com/c-darwin/go-thrust/lib/bindings/window"
-	"github.com/c-darwin/go-thrust/lib/common"
-	"github.com/c-darwin/go-thrust/lib/connection"
-	"github.com/c-darwin/go-thrust/lib/dispatcher"
-	"github.com/c-darwin/go-thrust/lib/events"
-	"github.com/c-darwin/go-thrust/lib/spawn"
+	"github.com/c-darwin/dcoin-go/vendor/src/github.com/c-darwin/go-thrust/lib/bindings/menu"
+	"github.com/c-darwin/dcoin-go/vendor/src/github.com/c-darwin/go-thrust/lib/bindings/session"
+	"github.com/c-darwin/dcoin-go/vendor/src/github.com/c-darwin/go-thrust/lib/bindings/window"
+	"github.com/c-darwin/dcoin-go/vendor/src/github.com/c-darwin/go-thrust/lib/common"
+	"github.com/c-darwin/dcoin-go/vendor/src/github.com/c-darwin/go-thrust/lib/connection"
+	"github.com/c-darwin/dcoin-go/vendor/src/github.com/c-darwin/go-thrust/lib/dispatcher"
+	"github.com/c-darwin/dcoin-go/vendor/src/github.com/c-darwin/go-thrust/lib/events"
+	"github.com/c-darwin/dcoin-go/vendor/src/github.com/c-darwin/go-thrust/lib/spawn"
 )
 
 /*

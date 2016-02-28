@@ -3,12 +3,12 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"time"
+	//"time"
 
-	"github.com/c-darwin/go-thrust/lib/commands"
-	"github.com/c-darwin/go-thrust/lib/connection"
-	"github.com/c-darwin/go-thrust/thrust"
-	"github.com/c-darwin/go-thrust/tutorials/provisioner"
+	"github.com/c-darwin/dcoin-go/vendor/src/github.com/c-darwin/go-thrust/lib/commands"
+	"github.com/c-darwin/dcoin-go/vendor/src/github.com/c-darwin/go-thrust/lib/connection"
+	"github.com/c-darwin/dcoin-go/vendor/src/github.com/c-darwin/go-thrust/thrust"
+	"github.com/c-darwin/dcoin-go/vendor/src/github.com/c-darwin/go-thrust/tutorials/provisioner"
 )
 
 /*
@@ -25,9 +25,18 @@ func main() {
 	thrust.Start()
 
 	thrustWindow := thrust.NewWindow(thrust.WindowOptions{
-		RootUrl: "http://breach.cc/",
+		RootUrl: "http://rbc.ru/",
 	})
 	thrustWindow.Show()
+
+	thrustWindow.Close()
+
+
+	thrustWindow = thrust.NewWindow(thrust.WindowOptions{
+		RootUrl: "http://google.com/",
+	})
+	thrustWindow.Show()
+
 
 	/*
 	  Here we use an EventResult Callback, it provides us a little less data than a ComandResponse cb
@@ -56,14 +65,20 @@ func main() {
 		connection.CleanExit()
 	}
 
+	onclose, err := thrust.NewEventHandler("close", func(er commands.EventResult) {
+		fmt.Println("close++++++++++")
+	})
+	fmt.Println(onclose)
+
 	/*
 		Here we use a CommandResponse callback just because we can, it provides us more data
 		than the EventResult callback
 	*/
-	onclose, err := thrust.NewEventHandler("closed", func(cr commands.EventResult) {
+	/*onclose, err := thrust.NewEventHandler("closed", func(cr commands.EventResult) {
 		fmt.Println("Close Event Occured")
-	})
-	fmt.Println(onclose)
+	})*/
+
+	//fmt.Println(onclose)
 	if err != nil {
 		fmt.Println(err)
 		connection.CleanExit()
@@ -77,7 +92,7 @@ func main() {
 		if err != nil {
 			fmt.Println(err)
 		} else {
-			fmt.Println(fmt.Sprintf("Event(%s) - Signaled by Command (%s)", cr.Type, cr_marshaled))
+			fmt.Println(fmt.Sprintf("======Event(%s %s) - Signaled by Command (%s)", cr.TargetID, cr.Type, cr_marshaled))
 		}
 	})
 
@@ -87,23 +102,23 @@ func main() {
 		connection.CleanExit()
 	}
 
-	time.AfterFunc(time.Second, func() {
+	/*time.AfterFunc(time.Second, func() {
 		thrustWindow.Focus()
 	})
 
-	time.AfterFunc(time.Second*2, func() {
+	time.AfterFunc(time.Second*10, func() {
 		thrustWindow.UnFocus()
 	})
 
-	time.AfterFunc(time.Second*3, func() {
+	/*time.AfterFunc(time.Second*3, func() {
 		thrustWindow.Close()
-	})
+	})*/
 
 	// Lets do a window timeout
-	go func() {
+	/*go func() {
 		<-time.After(time.Second * 5)
 		connection.CleanExit()
-	}()
+	}()*/
 	// BLOCKING - Dont run before youve excuted all commands you want first
 	thrust.LockThread()
 

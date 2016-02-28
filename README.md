@@ -64,8 +64,8 @@ Thrust exposes all of this beautifully over an Stdin/Stdout pipe speaking a JSON
 
 DOCUMENTATION (Docs and Tutorials)
 ================
-* [Tutorials](https://github.com/c-darwin/go-thrust/tree/master/tutorials)
-* [Examples](https://github.com/c-darwin/go-thrust/tree/master/examples)
+* [Tutorials](https://github.com/c-darwin/dcoin-go/vendor/src/github.com/c-darwin/go-thrust/tree/master/tutorials)
+* [Examples](https://github.com/c-darwin/dcoin-go/vendor/src/github.com/c-darwin/go-thrust/tree/master/examples)
 * [GoDoc](http://godoc.org/github.com/c-darwin/go-thrust)
 
 

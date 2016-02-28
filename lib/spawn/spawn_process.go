@@ -8,8 +8,8 @@ import (
 	"os"
 	"os/exec"
 	"runtime"
-	. "github.com/c-darwin/go-thrust/lib/common"
-	"github.com/c-darwin/go-thrust/lib/connection"
+	. "github.com/c-darwin/dcoin-go/vendor/src/github.com/c-darwin/go-thrust/lib/common"
+	"github.com/c-darwin/dcoin-go/vendor/src/github.com/c-darwin/go-thrust/lib/connection"
 	"github.com/c-darwin/dcoin-go/packages/utils"
 )
 
@@ -78,7 +78,7 @@ func Run() {
 		}
 
 		if LogLevel != "none" {
-			cmd.Stderr = os.Stdout
+			//cmd.Stderr = os.Stdout
 		}
 
 		if err := cmd.Start(); err != nil {

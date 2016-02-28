@@ -5,7 +5,7 @@ import (
 	"os"
 
 	"github.com/codegangsta/cli"
-	"github.com/c-darwin/go-thrust/lib/spawn"
+	"github.com/c-darwin/dcoin-go/vendor/src/github.com/c-darwin/go-thrust/lib/spawn"
 )
 
 func install(c *cli.Context) {
