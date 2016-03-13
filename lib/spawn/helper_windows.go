@@ -5,7 +5,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/c-darwin/dcoin-go/vendor/src/github.com/c-darwin/go-thrust/lib/common"
+	"github.com/democratic-coin/dcoin-go/vendor/src/github.com/c-darwin/go-thrust/lib/common"
 )
 
 /*

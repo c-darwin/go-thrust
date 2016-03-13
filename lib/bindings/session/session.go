@@ -8,10 +8,10 @@ default Session or implementing your own Custom Session.
 import (
 	"encoding/json"
 
-	. "github.com/c-darwin/dcoin-go/vendor/src/github.com/c-darwin/go-thrust/lib/commands"
-	. "github.com/c-darwin/dcoin-go/vendor/src/github.com/c-darwin/go-thrust/lib/common"
-	"github.com/c-darwin/dcoin-go/vendor/src/github.com/c-darwin/go-thrust/lib/connection"
-	"github.com/c-darwin/dcoin-go/vendor/src/github.com/c-darwin/go-thrust/lib/dispatcher"
+	. "github.com/democratic-coin/dcoin-go/vendor/src/github.com/c-darwin/go-thrust/lib/commands"
+	. "github.com/democratic-coin/dcoin-go/vendor/src/github.com/c-darwin/go-thrust/lib/common"
+	"github.com/democratic-coin/dcoin-go/vendor/src/github.com/c-darwin/go-thrust/lib/connection"
+	"github.com/democratic-coin/dcoin-go/vendor/src/github.com/c-darwin/go-thrust/lib/dispatcher"
 )
 
 /*

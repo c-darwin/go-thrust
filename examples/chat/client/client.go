@@ -4,7 +4,7 @@ import (
 	"flag"
 	"fmt"
 
-	"github.com/c-darwin/dcoin-go/vendor/src/github.com/c-darwin/go-thrust/thrust"
+	"github.com/democratic-coin/dcoin-go/vendor/src/github.com/c-darwin/go-thrust/thrust"
 )
 
 var (

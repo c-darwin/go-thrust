@@ -2,8 +2,8 @@ language: go
 go:
   - tip
 before_install:
-  - go get github.com/c-darwin/dcoin-go/vendor/src/github.com/mattn/gom
+  - go get github.com/democratic-coin/dcoin-go/vendor/src/github.com/mattn/gom
 script:
   - $HOME/gopath/bin/gom install
-  - $HOME/gopath/bin/gom test ./_vendor/src/github.com/c-darwin/dcoin-go/vendor/src/github.com/c-darwin/go-thrust/
-  - $HOME/gopath/bin/gom test ./_vendor/src/github.com/c-darwin/dcoin-go/vendor/src/github.com/c-darwin/go-thrust/lib/...
+  - $HOME/gopath/bin/gom test ./_vendor/src/github.com/democratic-coin/dcoin-go/vendor/src/github.com/c-darwin/go-thrust/
+  - $HOME/gopath/bin/gom test ./_vendor/src/github.com/democratic-coin/dcoin-go/vendor/src/github.com/c-darwin/go-thrust/lib/...

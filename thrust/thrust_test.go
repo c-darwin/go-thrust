@@ -3,7 +3,7 @@ package thrust
 import (
 	"testing"
 
-	"github.com/c-darwin/dcoin-go/vendor/src/github.com/c-darwin/go-thrust/lib/commands"
+	"github.com/democratic-coin/dcoin-go/vendor/src/github.com/c-darwin/go-thrust/lib/commands"
 )
 
 func TestNewEventHandler(t *testing.T) {
